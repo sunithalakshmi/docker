@@ -2,12 +2,13 @@ pipeline {
     agent any
 
     stages {
-        stage('docker') 
+        stage('docker')
         {
             steps {
-                sh 'docker build -t balu:latest .'
-                sh 'docker run -d -p 81:80 --name balu1 balu:latest'
+                sh 'docker build -t abcd:latest .'
+                sh 'docker run -d -p 81:80 --name anji abcd:latest'
             }
         }
     }
   }
+
